@@ -1,0 +1,10 @@
+USE sakila;
+SELECT 
+	customer_id, 
+    amount,
+    ROUND(amount - (amount * 0.10), 2) AS discount_10,
+    ROUND(amount - (amount * 0.25), 2) AS discount_25,
+    payment_date 
+FROM sakila.payment
+WHERE customer_id = 1
+ORDER BY payment_date;
