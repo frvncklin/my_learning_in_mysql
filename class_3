@@ -1,0 +1,6 @@
+USE sakila;
+
+SELECT first_name, email, amount, payment_date FROM sakila.customer, sakila.payment
+WHERE first_name = "BETTY"
+ORDER BY payment_date;
+-- Utilizando essas tabelas, eu basicamente mapeei a vida da Betty no nosso Banco de Dados.
