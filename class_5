@@ -1,0 +1,6 @@
+USE sakila;
+
+-- Operadores AND, OR e NOT
+
+SELECT * FROM sakila.payment
+WHERE staff_id = 1 AND amount = 0.99 AND customer_id < 10 -- Da mesma forma, pode ser utilizado WHERE NOT, AND NOT
