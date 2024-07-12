@@ -1,0 +1,5 @@
+USE sakila;
+
+SELECT * FROM sakila.address 
+WHERE district IN ('Texas', 'Alberta', 'California')	-- Dá a mesma coisa que colocarmos "WHERE district = 'Texas'", mas o uso disso é como um range, nós criamos uma lista na qual o district deve ser igual a um desses valores.
+-- A vantagem disso é que, com um operador nós podemos adicionar e filtrar múltiplas entradas (map)
