@@ -1,0 +1,11 @@
+USE sakila;
+
+SELECT * 
+FROM sakila.actor
+WHERE first_name NOT LIKE '%O'; -- Tanto faz letra maiúscula ou minúscula.
+-- A definição de LIKE que vamos utilizar equivale a "Igual a (alguma coisa)"
+-- Porcentagem (%), aqui, significa qualquer outra coisa a partir do "A"
+-- ________ % _________
+-- O sublinhado _ representa qualquer caractere e o % representa qualquer cadeia com zero ou mais caracteres.
+-- O operador 'LIKE' nos permite filtrar, dentro daquela linha, aquele dado.
+-- A correspondência com LIKE abrange toda a cadeia de caracteres do padrão.
