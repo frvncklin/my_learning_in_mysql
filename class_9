@@ -1,0 +1,11 @@
+USE sakila;
+-- IS NULL analisa qual campo está vazio.
+-- A s vezes, está faltando uma informação fantando ou uma linha de produto está faltando uma
+-- Informação e queremos listar todos os produtos em que aquela informação não foi fornecida.
+
+SELECT *
+FROM sakila.address
+WHERE address2 IS NULL;
+
+-- Dessa forma, puxamos campos vazios e podemos enviar mensagens aos clientes, por exemplo
+-- Pedindo para eles atualizarem o cadastro.
