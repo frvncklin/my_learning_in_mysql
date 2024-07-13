@@ -1,0 +1,7 @@
+-- O BETWEEN É MUITO UTILIZADO PARA PUXAR RANGES.
+USE sakila;
+
+SELECT * FROM sakila.payment
+WHERE amount BETWEEN 1.99 AND 3.99	-- Criamos um Range entre 1.99 e 3.99 para mapear o amount.
+-- Isso seria equivalente a "WHERE amount >= 1.99 AND amount <= 3.99"
+-- O BETWEEN, assim como o RANGE em Python, encurta os códigos.
